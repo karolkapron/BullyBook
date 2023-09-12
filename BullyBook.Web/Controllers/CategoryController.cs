@@ -18,5 +18,11 @@ namespace BullyBook.Web.Controllers
             IEnumerable<Category> objCategoryList = _db.Categories;
             return View(objCategoryList);
         }
+        //GET
+        public IActionResult Create()
+        {
+            IEnumerable<Category> objCategoryList = _db.Categories;
+            return View(objCategoryList);
+        }
     }
 }
