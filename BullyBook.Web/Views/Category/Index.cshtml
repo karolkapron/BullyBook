@@ -14,8 +14,8 @@
     </div>
 </div>
 <br />
-<table class="table table-bordered table-stripped" style="width:100%">
-    <thead>
+<table class="table table-bordered table-stripped">
+    <thead style="width:100%;">
         <tr class="table-primary">
             <th>
                 Category Name
@@ -32,8 +32,11 @@
                 <td width="50%">
                     @obj.Name
                 </td>
-                <td width="50%">
+                <td width="30%">
                     @obj.DisplayOrder
+                </td>
+                <td class="w-75 btn-group" role="group">
+                    <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id"><i class="bi bi-pencil"></i> Edit</a>
                 </td>
             </tr>
         }
